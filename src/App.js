@@ -11,6 +11,7 @@ function App() {
     const fetchEvents = async () => {
       setLoading(true);
       const res = await fetch(
+        //This is a NASA API
         "https://eonet.sci.gsfc.nasa.gov/api/v2.1/events"
       );
       const { events } = await res.json();
